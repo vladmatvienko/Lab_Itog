@@ -1,7 +1,6 @@
 public class Drob {
     public int numerator=0;
     public int denumerator=0;
-    public String s;
     public void setDenumerator(int denumerator) {
         if (denumerator == 0){
             System.out.println("Ошибка");
@@ -35,14 +34,5 @@ public class Drob {
     public void setDivide(Drob one, Drob two) {
         this.numerator = two.getNumerator() * one.getDenumerator();
         this.denumerator = one.getNumerator() * two.getDenumerator();
-    }
-    public void print() {
-        System.out.println(numerator +"/"+ denumerator);
-    }
-    public void Zamena() {
-        s = numerator +"/"+ denumerator;
-    }
-    public String gets() {
-        return s;
     }
 }
