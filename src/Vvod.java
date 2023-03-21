@@ -78,7 +78,6 @@ public class Vvod {
                     Drob oneDrob = new Drob();
                     Drob twoDrob = new Drob();
                     Drob lastDrob = new Drob();
-                    System.out.println(Arrays.toString(array));
                     if (w == 1) {
                         for (int k = 0; k < g; k++) {
                             if (array[k].equals("/")) {
@@ -239,7 +238,8 @@ public class Vvod {
                                                     array1[k - 1] = String.valueOf(lastDrob.getDenumerator());
                                                     array1[k - 2] = "/";
                                                     array1[k - 3] = String.valueOf(lastDrob.getNumerator());
-                                                    y = y + 4;
+                                                    array1[k - 4] = "";
+                                                    y = y + 5;
                                                 }
                                             }
                                         }
