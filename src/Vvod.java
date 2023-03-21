@@ -78,6 +78,7 @@ public class Vvod {
                     Drob oneDrob = new Drob();
                     Drob twoDrob = new Drob();
                     Drob lastDrob = new Drob();
+                    System.out.println(Arrays.toString(array));
                     if (w == 1) {
                         for (int k = 0; k < g; k++) {
                             if (array[k].equals("/")) {
@@ -117,7 +118,7 @@ public class Vvod {
                             for (int a = 0; a < g; a++) {
                                 if (array[a].equals("(")) {
                                     for (int b = 0; b < g; b++) {
-                                        if (array[b].equals(")") & b - a < x & b - a > 0) {
+                                        if (array[b].equals(")") & b - a <= x & b - a > 0) {
                                             x = b - a - 1;
                                             i1 = a + 1;
                                             i2 = b - 1;
